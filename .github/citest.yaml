@@ -1,0 +1,8 @@
+name: Github Actions Demo
+on: [ push] 
+jobs: 
+ Test:
+  runs-on: ubuntu-latest
+   steps:
+    - runs: echo "The Job was automatically triggered by a ${{github.event_name}} event." 
+    - runs: python main.py
